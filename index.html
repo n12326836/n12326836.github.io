@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joy Sun · Portfolio</title>
+<meta name="description" content="Joy Sun – IT graduate (QUT). Front-end development, UX research and AI product design case studies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbfaf7; --surface:#ffffff; --ink:#1d2330; --muted:#5b6474; --line:#e6e2da;
+  --accent:#1f5f8b; --accent-soft:#e8f0f6; --green:#2f7a55;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:5;background:rgba(251,250,247,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+nav b{font-weight:700;letter-spacing:.2px}
+nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;font-size:14px}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+header{padding:72px 0 48px}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(32px,5vw,46px);line-height:1.15;margin:10px 0 16px;letter-spacing:-.5px}
+.lead{font-size:18px;color:var(--muted);max-width:680px;margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chip{font-size:13px;padding:5px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:500}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600;font-size:15px;border:1px solid var(--accent)}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.ghost{color:var(--accent);background:transparent}
+section{padding:40px 0;border-top:1px solid var(--line)}
+h2{font-size:26px;margin:0 0 6px;letter-spacing:-.3px}
+.sub{color:var(--muted);margin:0 0 22px}
+.case{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px;margin-bottom:28px}
+.case h3{font-size:22px;margin:4px 0 4px}
+.meta{font-size:14px;color:var(--muted);margin-bottom:14px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.case h4{font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin:18px 0 6px}
+.case ul{margin:0;padding-left:20px}
+.case li{margin:4px 0}
+.stats{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0 4px}
+.stat{flex:1 1 140px;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.stat b{display:block;font-size:24px;color:var(--accent);line-height:1.2}
+.stat span{font-size:13px;color:var(--muted)}
+figure{margin:18px 0 0}
+figure img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);display:block;background:#fff}
+figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.tools{font-size:13px;color:#7a8291;margin-top:16px;border-top:1px dashed var(--line);padding-top:10px}
+.minis{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.mini{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px}
+.mini h3{font-size:18px;margin:4px 0 8px}
+.mini p{margin:0;font-size:15px}
+.about{display:grid;grid-template-columns:2fr 1fr;gap:28px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.card p{margin:4px 0}
+footer{padding:36px 0 60px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:720px){
+  nav ul{gap:12px;font-size:13px}
+  nav ul li.hide-sm{display:none}
+  .grid2,.gallery,.about,.minis{grid-template-columns:1fr}
+  .case{padding:20px}
+  header{padding:48px 0 32px}
+}
+@media print{
+  nav{display:none}
+  body{background:#fff;font-size:12.5px}
+  .case{break-inside:auto;border:none;padding:0}
+  section{padding:20px 0}
+  figure{break-inside:avoid}
+  .btns{display:none}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <b>Joy Sun</b>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li class="hide-sm"><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="wrap">
+  <div class="eyebrow">Portfolio · Brisbane</div>
+  <h1>I turn what users need into working, tested software.</h1>
+  <p class="lead">IT graduate (QUT Master of IT, Computer Science, Nov 2026) and Junior Developer Intern at AImmi. I design and build front ends, run user research, and shape AI features so people can trust and check them.</p>
+  <div class="chips">
+    <span class="chip">Front-end development</span>
+    <span class="chip">UX research &amp; testing</span>
+    <span class="chip">AI product design</span>
+    <span class="chip">Requirements &amp; client delivery</span>
+  </div>
+  <div class="btns">
+    <a class="btn primary" href="#work">See case studies</a>
+    <a class="btn ghost" href="#contact">Contact me</a>
+  </div>
+</header>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Selected work</h2>
+    <p class="sub">Three in-depth case studies, each showing a different part of how I work: delivering for a client, designing AI with users, and finding problems through research.</p>
+
+    <!-- SPDMS -->
+    <article class="case" id="spdms">
+      <div class="eyebrow">Industry capstone · Front-end lead</div>
+      <h3>Strategic Plan Development Management System</h3>
+      <div class="meta">Client: Philippine Department of Science &amp; Technology · 7-person Agile team · 2026</div>
+      <p>A multi-role web system that helps a government department draft, review, approve and track its strategic plans. I owned the whole front end, from wireframes to the final coded pages.</p>
+      <div class="stats">
+        <div class="stat"><b>5</b><span>client review rounds to sign-off</span></div>
+        <div class="stat"><b>5</b><span>government user roles</span></div>
+        <div class="stat"><b>Top</b><span>code contributor in a team of 7</span></div>
+      </div>
+      <div class="grid2">
+        <div>
+          <h4>What I did</h4>
+          <ul>
+            <li>Turned client needs into requirements, user flows and wireframes.</li>
+            <li>Designed every screen in Figma and agreed layouts and interactions with the client.</li>
+            <li>Coded all front-end pages: login and profile, user management, role-based access, management dashboard and report, mapping page and landing page.</li>
+            <li>Built the strategic objective mapping back end (MySQL, REST APIs).</li>
+          </ul>
+        </div>
+        <div>
+          <h4>How I worked</h4>
+          <ul>
+            <li>Presented each working version to the client and adjusted it from their feedback.</li>
+            <li>Reported to the project manager and resolved integration conflicts with back-end developers.</li>
+            <li>Wrote the user guide and process flowcharts so staff could learn the system.</li>
+            <li>Tracked work in Jira and shipped through Git/GitHub.</li>
+          </ul>
+        </div>
+      </div>
+      <figure><img src="images/spdms-landing.jpg" alt="SPDMS landing page" loading="lazy"><figcaption>Landing page I designed and built.</figcaption></figure>
+      <div class="gallery">
+        <figure><img src="images/spdms-dashboard.jpg" alt="Administrative Admin dashboard with plan progress charts" loading="lazy"><figcaption>Management dashboard: plan progress, filters and export.</figcaption></figure>
+        <figure><img src="images/spdms-mapping.jpg" alt="Strategic mapping page linking agenda, PDP elements and DOST objectives" loading="lazy"><figcaption>Strategic mapping: a step-by-step, three-level link from national agenda to department objectives.</figcaption></figure>
+      </div>
+      <figure><img src="images/spdms-tech-dashboard.jpg" alt="Technical Administration dashboard with account security and system health" loading="lazy"><figcaption>Technical Admin dashboard: account security, audit events and backups at a glance.</figcaption></figure>
+      <div class="tools">Tools: Figma, PHP (Laravel), JavaScript, Tailwind CSS, Vite, MySQL, REST APIs, Git/GitHub, Jira</div>
+    </article>
+
+    <!-- Metallum -->
+    <article class="case" id="metallum">
+      <div class="eyebrow">AI product design · Individual project</div>
+      <h3>Metallum Prototype – AI research assistant</h3>
+      <div class="meta">QUT IFN692 Interaction Design for Human-Centred AI &amp; CAB432 Cloud Computing · 2026</div>
+      <p><b>Problem:</b> researchers in green metallurgy read many papers, but results such as “11.72 %/min”, “100%” and “33%” look comparable when they measure different things. AI chatbots make this worse by giving answers without sources. <b>My answer:</b> a research workspace that keeps every result beside its method, conditions and original figure, and lets the researcher decide what to keep.</p>
+      <div class="stats">
+        <div class="stat"><b>3</b><span>rounds of user testing</span></div>
+        <div class="stat"><b>7</b><span>researchers tested it</span></div>
+        <div class="stat"><b>3</b><span>redesigns, one after each round</span></div>
+      </div>
+      <figure><img src="images/metallum-overview.jpg" alt="Metallum overview: comparison fields, source trace and researcher decision" loading="lazy"><figcaption>The three core ideas: choose your comparison fields, trace each value to its source, and record the researcher's decision.</figcaption></figure>
+      <h4>What testing changed</h4>
+      <ul>
+        <li><b>Round 1 (experts):</b> they got lost in a dense screen, so I added a step-by-step guide (the “Ore” mascot) and linked every value to its original chart.</li>
+        <li><b>Round 2 (newcomers):</b> search felt dull and slow, so I added a map that grows from the search to related papers and removed extra confirmation steps.</li>
+        <li><b>Round 3 (experts):</b> they asked about accuracy and bulk downloading, so I researched the ethics and access rules and designed papers to be read one at a time.</li>
+        <li>I chose not to build a chatbot, because testers said long AI answers felt like one and hid the evidence.</li>
+      </ul>
+      <div class="gallery">
+        <figure><img src="images/metallum-problem.jpg" alt="Three numbers that answer different questions" loading="lazy"><figcaption>Why numbers can't simply be ranked.</figcaption></figure>
+        <figure><img src="images/metallum-process.jpg" alt="Design process from understand to next test" loading="lazy"><figcaption>Design process and an honest list of what is prepared vs. working.</figcaption></figure>
+      </div>
+      <figure><img src="images/metallum-reflection.jpg" alt="Critical reflection on responsibility for research claims" loading="lazy"><figcaption>Responsible AI: what the interface supports and what is still unresolved.</figcaption></figure>
+      <h4>Build</h4>
+      <p>Clickable prototype in HTML/JavaScript. The supporting cloud service runs in Python (FastAPI) and Docker on AWS: an API takes a question, a queue hands it to background workers that scale from 0 to 5 with demand, and repeated questions are answered from a cache. The extraction step is still a placeholder; a real AI model call is the next step.</p>
+      <figure><img src="images/metallum-cloud.jpg" alt="Cloud architecture: load balancer, API service, message queue, auto-scaling workers, database and cache" loading="lazy"><figcaption>Cloud architecture (solid = built, grey dashed = planned).</figcaption></figure>
+      <div class="tools">Tools: HTML, CSS, JavaScript, Python, FastAPI, Docker, AWS (ECS Fargate, SQS, DynamoDB, ElastiCache, S3)</div>
+    </article>
+
+    <!-- Travelly -->
+    <article class="case" id="travelly">
+      <div class="eyebrow">UX research · Pair project</div>
+      <h3>Travelly – active transport app research &amp; redesign</h3>
+      <div class="meta">QUT IFN637 · a live QUT research app that encourages walking and cycling · 2025</div>
+      <p>We studied why people struggled with Travelly and turned the findings into a redesign. Research was run under university ethics approval.</p>
+      <div class="stats">
+        <div class="stat"><b>4</b><span>research participants</span></div>
+        <div class="stat"><b>7</b><span>usability and trust themes found</span></div>
+        <div class="stat"><b>6</b><span>prototype test sessions (I ran 3)</span></div>
+      </div>
+      <div class="grid2">
+        <div>
+          <h4>Methods</h4>
+          <ul>
+            <li>Interviews and think-aloud usability tests on four real tasks.</li>
+            <li>3-day diary study and a hands-on journey-mapping activity.</li>
+            <li>Affinity diagram and thematic analysis of the transcripts.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Key findings</h4>
+          <ul>
+            <li>Repeated sign-up and password failures.</li>
+            <li>CO₂ figures were valued but not explained.</li>
+            <li>Trip recording needed clear start and stop controls.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="gallery">
+        <figure><img src="images/travelly-affinity.jpg" alt="Affinity diagram of research notes" loading="lazy"><figcaption>Affinity diagram grouping participant notes.</figcaption></figure>
+        <figure><img src="images/travelly-themes.jpg" alt="Theme diagram of 7 user experience themes" loading="lazy"><figcaption>Seven themes from the analysis.</figcaption></figure>
+        <figure><img src="images/travelly-persona.jpg" alt="Persona of an international student commuter" loading="lazy"><figcaption>Persona built from the research.</figcaption></figure>
+        <figure><img src="images/travelly-journey.jpg" alt="Journey map with pain points and opportunities" loading="lazy"><figcaption>Journey map: pain points and design opportunities.</figcaption></figure>
+      </div>
+      <h4>Outcome</h4>
+      <p>A persona, journey map and design brief, then an interactive Figma prototype of the key flows, tested with users before any development. <a href="https://www.figma.com/design/yH5XQysWPgI7hh3At4zzbF/637-Travelly?node-id=0-1" target="_blank" rel="noopener">View the Figma prototype</a> (start from Flow 1).</p>
+      <div class="tools">Tools &amp; methods: Figma, interviews, think-aloud testing, diary study, journey mapping, affinity diagram, thematic analysis</div>
+    </article>
+
+    <h2 style="margin-top:44px">More projects</h2>
+    <p class="sub">Work experience, team builds, a hackathon and machine learning.</p>
+    <div class="minis">
+      <div class="mini">
+        <div class="eyebrow">Work · Junior Developer Intern</div>
+        <h3>AImmi – AI assistant redesign</h3>
+        <p style="margin:0 0 8px;font-size:14px"><a href="https://ai-mmi.com" target="_blank" rel="noopener">ai-mmi.com</a> (live product)</p>
+        <p>Split a confusing mix of voice, transcription and text modes into two clear flows: real-time voice Q&amp;A and a text chat by typing or dictation. Wrote the voice API code and designed the flows; also translated and updated product copy and worked with the founder on requirements and releases.</p>
+        <div class="tools">Tools: PHP (Laravel), JavaScript, DeepSeek &amp; Grok APIs, Cloudflare</div>
+      </div>
+      <div class="mini">
+        <div class="eyebrow">Hackathon · Team</div>
+        <h3>DR.BOT – disaster triage companion</h3>
+        <p>QUT Brains &amp; Bots Hackathon. A device that finds a person, asks triage questions by voice in English or Chinese, falls back to hand gestures if they can't speak, and reports to a live dashboard, even offline. I built the bilingual offline voice and gesture triage flow.</p>
+        <div class="tools">Tools: Python, Flask, OpenCV, YOLO, MediaPipe, Vosk, Whisper</div>
+      </div>
+      <div class="mini">
+        <div class="eyebrow">Team web app · QUT IFN636</div>
+        <h3>Leave &amp; Shift Manager</h3>
+        <p>A web app where employees apply for leave, see their shifts and request swaps, and admins approve requests and assign shifts. I built shift assignment, swap and conflict-check features.</p>
+        <div class="tools">Tools: React, Node.js, Express, MongoDB, JWT, AWS EC2, GitHub Actions</div>
+      </div>
+      <div class="mini">
+        <div class="eyebrow">Team web app · QUT</div>
+        <h3>ThaimeUp – food ordering site</h3>
+        <p>A Thai food ordering site with menu, basket, checkout and an admin area for menu items and orders. I built the login and registration front end, logout and the custom error pages.</p>
+        <div class="tools">Tools: Python, Flask, MySQL, HTML, CSS</div>
+      </div>
+      <div class="mini">
+        <div class="eyebrow">Machine learning · QUT</div>
+        <h3>Used car risk prediction &amp; text classification</h3>
+        <p>Cleaned 41,000+ car sales records and compared decision tree, logistic regression and neural network models to flag bad purchases (best ROC AUC 0.77). In a second project my BERTweet text classifier reached 94.0% test accuracy and 0.946 F1.</p>
+        <div class="tools">Tools: Python, pandas, scikit-learn, PyTorch, Hugging Face, Jupyter</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <h2>About me</h2>
+      <p>I'm a QUT Master of IT (Computer Science) graduate based in Brisbane. At AImmi I redesigned how users talk to the platform's AI assistant, splitting a confusing mix of voice, transcription and text modes into two clear flows: a real-time voice conversation and a text chat. I work directly with the founder to turn requests into requirements, test changes and release them.</p>
+      <p>I like the space between users, business and developers: finding out what people actually need, explaining trade-offs in plain language, and building something they can use.</p>
+    </div>
+    <div class="card">
+      <p><b>Now:</b> Junior Developer Intern, AImmi</p>
+      <p><b>Study:</b> QUT Master of IT (CS), Nov 2026</p>
+      <p><b>Location:</b> Brisbane, QLD</p>
+      <p><b>Work rights:</b> Australian Permanent Resident</p>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2 style="color:var(--ink)">Contact</h2>
+    <p>Email: <a href="mailto:aixiaogou1314@gmail.com">aixiaogou1314@gmail.com</a> · Phone: 0412 873 654<br>
+    <a href="https://www.linkedin.com/in/yue-sun-b20420376" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/n12326836" target="_blank" rel="noopener">GitHub</a></p>
+    <p>© 2026 Joy Sun</p>
+  </div>
+</footer>
+</body>
+</html>
