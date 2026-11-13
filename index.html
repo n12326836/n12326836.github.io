@@ -1,286 +1,589 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Joy Sun · Portfolio</title>
-<meta name="description" content="Joy Sun – IT graduate (QUT). Front-end development, UX research and AI product design case studies.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --bg:#fbfaf7; --surface:#ffffff; --ink:#1d2330; --muted:#5b6474; --line:#e6e2da;
-  --accent:#1f5f8b; --accent-soft:#e8f0f6; --green:#2f7a55;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
-a{color:var(--accent)}
-.wrap{max-width:980px;margin:0 auto;padding:0 20px}
-nav{position:sticky;top:0;z-index:5;background:rgba(251,250,247,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
-nav b{font-weight:700;letter-spacing:.2px}
-nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;font-size:14px}
-nav a{text-decoration:none;color:var(--muted)}
-nav a:hover{color:var(--ink)}
-header{padding:72px 0 48px}
-.eyebrow{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
-h1{font-size:clamp(32px,5vw,46px);line-height:1.15;margin:10px 0 16px;letter-spacing:-.5px}
-.lead{font-size:18px;color:var(--muted);max-width:680px;margin:0}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
-.chip{font-size:13px;padding:5px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:500}
-.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
-.btn{display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600;font-size:15px;border:1px solid var(--accent)}
-.btn.primary{background:var(--accent);color:#fff}
-.btn.ghost{color:var(--accent);background:transparent}
-section{padding:40px 0;border-top:1px solid var(--line)}
-h2{font-size:26px;margin:0 0 6px;letter-spacing:-.3px}
-.sub{color:var(--muted);margin:0 0 22px}
-.case{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px;margin-bottom:28px}
-.case h3{font-size:22px;margin:4px 0 4px}
-.meta{font-size:14px;color:var(--muted);margin-bottom:14px}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.case h4{font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin:18px 0 6px}
-.case ul{margin:0;padding-left:20px}
-.case li{margin:4px 0}
-.stats{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0 4px}
-.stat{flex:1 1 140px;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-.stat b{display:block;font-size:24px;color:var(--accent);line-height:1.2}
-.stat span{font-size:13px;color:var(--muted)}
-figure{margin:18px 0 0}
-figure img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);display:block;background:#fff}
-figcaption{font-size:13px;color:var(--muted);margin-top:6px}
-.gallery{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.tools{font-size:13px;color:#7a8291;margin-top:16px;border-top:1px dashed var(--line);padding-top:10px}
-.minis{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.mini{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px}
-.mini h3{font-size:18px;margin:4px 0 8px}
-.mini p{margin:0;font-size:15px}
-.about{display:grid;grid-template-columns:2fr 1fr;gap:28px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
-.card p{margin:4px 0}
-footer{padding:36px 0 60px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
-@media (max-width:720px){
-  nav ul{gap:12px;font-size:13px}
-  nav ul li.hide-sm{display:none}
-  .grid2,.gallery,.about,.minis{grid-template-columns:1fr}
-  .case{padding:20px}
-  header{padding:48px 0 32px}
-}
-@media print{
-  nav{display:none}
-  body{background:#fff;font-size:12.5px}
-  .case{break-inside:auto;border:none;padding:0}
-  section{padding:20px 0}
-  figure{break-inside:avoid}
-  .btns{display:none}
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joy Sun | Human understanding × intelligent technology</title>
+  <meta name="description" content="Joy Sun works where human understanding, product thinking and AI technology meet: AI solutions, human-centred AI, product, UX and digital systems. Based in Brisbane.">
+  <meta name="theme-color" content="#f7f5f1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@400..650&display=swap">
+  <link rel="stylesheet" href="portfolio.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="main.js" defer></script>
 </head>
 <body>
-<nav>
-  <div class="wrap">
-    <b>Joy Sun</b>
-    <ul>
-      <li><a href="#work">Work</a></li>
-      <li class="hide-sm"><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+  <a class="skip" href="#main">Skip to content</a>
 
-<header class="wrap">
-  <div class="eyebrow">Portfolio · Brisbane</div>
-  <h1>I turn what users need into working, tested software.</h1>
-  <p class="lead">IT graduate (QUT Master of IT, Computer Science, Nov 2026) and Junior Developer Intern at AImmi. I design and build front ends, run user research, and shape AI features so people can trust and check them.</p>
-  <div class="chips">
-    <span class="chip">Front-end development</span>
-    <span class="chip">UX research &amp; testing</span>
-    <span class="chip">AI product design</span>
-    <span class="chip">Requirements &amp; client delivery</span>
-  </div>
-  <div class="btns">
-    <a class="btn primary" href="#work">See case studies</a>
-    <a class="btn ghost" href="#contact">Contact me</a>
-  </div>
-</header>
-
-<section id="work">
-  <div class="wrap">
-    <h2>Selected work</h2>
-    <p class="sub">Three in-depth case studies, each showing a different part of how I work: delivering for a client, designing AI with users, and finding problems through research.</p>
-
-    <!-- SPDMS -->
-    <article class="case" id="spdms">
-      <div class="eyebrow">Industry capstone · Front-end lead</div>
-      <h3>Strategic Plan Development Management System</h3>
-      <div class="meta">Client: Philippine Department of Science &amp; Technology · 7-person Agile team · 2026</div>
-      <p>A multi-role web system that helps a government department draft, review, approve and track its strategic plans. I owned the whole front end, from wireframes to the final coded pages.</p>
-      <div class="stats">
-        <div class="stat"><b>5</b><span>client review rounds to sign-off</span></div>
-        <div class="stat"><b>5</b><span>government user roles</span></div>
-        <div class="stat"><b>Top</b><span>code contributor in a team of 7</span></div>
-      </div>
-      <div class="grid2">
-        <div>
-          <h4>What I did</h4>
-          <ul>
-            <li>Turned client needs into requirements, user flows and wireframes.</li>
-            <li>Designed every screen in Figma and agreed layouts and interactions with the client.</li>
-            <li>Coded all front-end pages: login and profile, user management, role-based access, management dashboard and report, mapping page and landing page.</li>
-            <li>Built the strategic objective mapping back end (MySQL, REST APIs).</li>
-          </ul>
-        </div>
-        <div>
-          <h4>How I worked</h4>
-          <ul>
-            <li>Presented each working version to the client and adjusted it from their feedback.</li>
-            <li>Reported to the project manager and resolved integration conflicts with back-end developers.</li>
-            <li>Wrote the user guide and process flowcharts so staff could learn the system.</li>
-            <li>Tracked work in Jira and shipped through Git/GitHub.</li>
-          </ul>
-        </div>
-      </div>
-      <figure><img src="images/spdms-landing.jpg" alt="SPDMS landing page" loading="lazy"><figcaption>Landing page I designed and built.</figcaption></figure>
-      <div class="gallery">
-        <figure><img src="images/spdms-dashboard.jpg" alt="Administrative Admin dashboard with plan progress charts" loading="lazy"><figcaption>Management dashboard: plan progress, filters and export.</figcaption></figure>
-        <figure><img src="images/spdms-mapping.jpg" alt="Strategic mapping page linking agenda, PDP elements and DOST objectives" loading="lazy"><figcaption>Strategic mapping: a step-by-step, three-level link from national agenda to department objectives.</figcaption></figure>
-      </div>
-      <figure><img src="images/spdms-tech-dashboard.jpg" alt="Technical Administration dashboard with account security and system health" loading="lazy"><figcaption>Technical Admin dashboard: account security, audit events and backups at a glance.</figcaption></figure>
-      <div class="tools">Tools: Figma, PHP (Laravel), JavaScript, Tailwind CSS, Vite, MySQL, REST APIs, Git/GitHub, Jira</div>
-    </article>
-
-    <!-- Metallum -->
-    <article class="case" id="metallum">
-      <div class="eyebrow">AI product design · Individual project</div>
-      <h3>Metallum Prototype – AI research assistant</h3>
-      <div class="meta">QUT IFN692 Interaction Design for Human-Centred AI &amp; CAB432 Cloud Computing · 2026</div>
-      <p><b>Problem:</b> researchers in green metallurgy read many papers, but results such as “11.72 %/min”, “100%” and “33%” look comparable when they measure different things. AI chatbots make this worse by giving answers without sources. <b>My answer:</b> a research workspace that keeps every result beside its method, conditions and original figure, and lets the researcher decide what to keep.</p>
-      <div class="stats">
-        <div class="stat"><b>3</b><span>rounds of user testing</span></div>
-        <div class="stat"><b>7</b><span>researchers tested it</span></div>
-        <div class="stat"><b>3</b><span>redesigns, one after each round</span></div>
-      </div>
-      <figure><img src="images/metallum-overview.jpg" alt="Metallum overview: comparison fields, source trace and researcher decision" loading="lazy"><figcaption>The three core ideas: choose your comparison fields, trace each value to its source, and record the researcher's decision.</figcaption></figure>
-      <h4>What testing changed</h4>
-      <ul>
-        <li><b>Round 1 (experts):</b> they got lost in a dense screen, so I added a step-by-step guide (the “Ore” mascot) and linked every value to its original chart.</li>
-        <li><b>Round 2 (newcomers):</b> search felt dull and slow, so I added a map that grows from the search to related papers and removed extra confirmation steps.</li>
-        <li><b>Round 3 (experts):</b> they asked about accuracy and bulk downloading, so I researched the ethics and access rules and designed papers to be read one at a time.</li>
-        <li>I chose not to build a chatbot, because testers said long AI answers felt like one and hid the evidence.</li>
+  <!-- Navigation -->
+  <header class="site-nav">
+    <nav class="wrap nav-inner" aria-label="Main">
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">✦</span>Joy Sun</a>
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-cv" href="Joy_Sun_Resume.pdf" download>Resume</a></li>
       </ul>
-      <div class="gallery">
-        <figure><img src="images/metallum-problem.jpg" alt="Three numbers that answer different questions" loading="lazy"><figcaption>Why numbers can't simply be ranked.</figcaption></figure>
-        <figure><img src="images/metallum-process.jpg" alt="Design process from understand to next test" loading="lazy"><figcaption>Design process and an honest list of what is prepared vs. working.</figcaption></figure>
-      </div>
-      <figure><img src="images/metallum-reflection.jpg" alt="Critical reflection on responsibility for research claims" loading="lazy"><figcaption>Responsible AI: what the interface supports and what is still unresolved.</figcaption></figure>
-      <h4>Build</h4>
-      <p>Clickable prototype in HTML/JavaScript. The supporting cloud service runs in Python (FastAPI) and Docker on AWS: an API takes a question, a queue hands it to background workers that scale from 0 to 5 with demand, and repeated questions are answered from a cache. The extraction step is still a placeholder; a real AI model call is the next step.</p>
-      <figure><img src="images/metallum-cloud.jpg" alt="Cloud architecture: load balancer, API service, message queue, auto-scaling workers, database and cache" loading="lazy"><figcaption>Cloud architecture (solid = built, grey dashed = planned).</figcaption></figure>
-      <div class="tools">Tools: HTML, CSS, JavaScript, Python, FastAPI, Docker, AWS (ECS Fargate, SQS, DynamoDB, ElastiCache, S3)</div>
-    </article>
+    </nav>
+  </header>
 
-    <!-- Travelly -->
-    <article class="case" id="travelly">
-      <div class="eyebrow">UX research · Pair project</div>
-      <h3>Travelly – active transport app research &amp; redesign</h3>
-      <div class="meta">QUT IFN637 · a live QUT research app that encourages walking and cycling · 2025</div>
-      <p>We studied why people struggled with Travelly and turned the findings into a redesign. Research was run under university ethics approval.</p>
-      <div class="stats">
-        <div class="stat"><b>4</b><span>research participants</span></div>
-        <div class="stat"><b>7</b><span>usability and trust themes found</span></div>
-        <div class="stat"><b>6</b><span>prototype test sessions (I ran 3)</span></div>
+  <main id="main">
+
+    <!-- 01 Encounter -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-no">01</span> Joy Sun · Brisbane</p>
+        <h1 id="hero-title">Designing where <em>human understanding</em> meets intelligent technology.</h1>
+        
+          <p class="lead">I explore how AI can understand real needs, support better decisions and turn complex workflows into usable digital experiences.</p>
+          <p class="thread">I have always studied how people mean things: first in texts, now in systems.</p>
+          <p class="areas">AI Solutions · Human-Centred AI · Product &amp; UX · Business Analysis · Implementation</p>
+          <div class="actions">
+            <a class="button button-primary" href="#work">View selected work <span aria-hidden="true">↓</span></a>
+            <a class="button" href="#about">About me / Resume</a>
+          </div>
+        </div>
+        <svg class="scene" viewBox="0 0 640 560" aria-hidden="true" focusable="false">
+  <defs>
+    <radialGradient id="nebula"><stop stop-color="#6165b8" stop-opacity=".49"/><stop offset="1" stop-color="#28275e" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glow"><stop stop-color="#ffe2a3" stop-opacity=".65"/><stop offset="1" stop-color="#ffe2a3" stop-opacity="0"/></radialGradient>
+    <linearGradient id="hill" x2="0" y2="1"><stop stop-color="#34365f"/><stop offset="1" stop-color="#121529" stop-opacity="0"/></linearGradient>
+    <linearGradient id="shell" x2=".7" y2="1"><stop stop-color="#fff0ce"/><stop offset="1" stop-color="#777cb8"/></linearGradient>
+  </defs>
+  <ellipse cx="325" cy="270" rx="315" ry="250" fill="url(#nebula)"/>
+  <g fill="#d9ddff"><circle cx="143" cy="248" r="0.6" opacity="0.59"/><circle cx="457" cy="188" r="0.6" opacity="0.67"/><circle cx="353" cy="81" r="0.9" opacity="0.39"/><circle cx="50" cy="327" r="0.9" opacity="0.78"/><circle cx="440" cy="49" r="0.6" opacity="0.58"/><circle cx="318" cy="431" r="0.9" opacity="0.34"/><circle cx="114" cy="62" r="1.4" opacity="0.59"/><circle cx="264" cy="188" r="1.8" opacity="0.41"/><circle cx="527" cy="145" r="1.4" opacity="0.72"/><circle cx="189" cy="442" r="0.6" opacity="0.43"/><circle cx="33" cy="429" r="1.4" opacity="0.53"/><circle cx="529" cy="419" r="1.8" opacity="0.62"/><circle cx="189" cy="314" r="1.4" opacity="0.46"/><circle cx="25" cy="304" r="1.8" opacity="0.68"/><circle cx="540" cy="437" r="0.6" opacity="0.28"/><circle cx="454" cy="364" r="0.6" opacity="0.48"/><circle cx="412" cy="59" r="0.9" opacity="0.53"/><circle cx="410" cy="6" r="0.6" opacity="0.50"/><circle cx="198" cy="175" r="0.6" opacity="0.55"/><circle cx="357" cy="183" r="1.4" opacity="0.77"/><circle cx="195" cy="454" r="0.6" opacity="0.27"/><circle cx="137" cy="206" r="0.6" opacity="0.26"/><circle cx="420" cy="124" r="0.9" opacity="0.77"/><circle cx="471" cy="44" r="0.6" opacity="0.52"/><circle cx="536" cy="138" r="1.4" opacity="0.81"/><circle cx="484" cy="487" r="0.6" opacity="0.61"/><circle cx="362" cy="113" r="1.4" opacity="0.79"/><circle cx="18" cy="191" r="1.4" opacity="0.60"/><circle cx="348" cy="99" r="0.9" opacity="0.60"/><circle cx="611" cy="444" r="1.4" opacity="0.33"/><circle cx="78" cy="195" r="1.4" opacity="0.63"/><circle cx="221" cy="261" r="1.8" opacity="0.74"/><circle cx="184" cy="23" r="1.4" opacity="0.67"/><circle cx="594" cy="481" r="0.9" opacity="0.47"/><circle cx="120" cy="184" r="0.6" opacity="0.37"/><circle cx="639" cy="33" r="0.9" opacity="0.35"/><circle cx="501" cy="391" r="0.6" opacity="0.67"/><circle cx="429" cy="475" r="1.4" opacity="0.38"/><circle cx="236" cy="115" r="1.4" opacity="0.77"/><circle cx="579" cy="161" r="0.9" opacity="0.75"/><circle cx="326" cy="58" r="0.6" opacity="0.52"/><circle cx="618" cy="286" r="0.6" opacity="0.73"/><circle cx="30" cy="283" r="0.6" opacity="0.36"/><circle cx="463" cy="238" r="1.8" opacity="0.55"/><circle cx="143" cy="363" r="1.4" opacity="0.38"/><circle cx="9" cy="388" r="0.6" opacity="0.33"/><circle cx="635" cy="370" r="1.4" opacity="0.73"/><circle cx="525" cy="269" r="0.9" opacity="0.38"/><circle cx="538" cy="162" r="1.4" opacity="0.72"/><circle cx="522" cy="507" r="1.8" opacity="0.71"/><circle cx="551" cy="195" r="1.8" opacity="0.47"/><circle cx="79" cy="396" r="0.9" opacity="0.65"/><circle cx="87" cy="51" r="1.8" opacity="0.43"/><circle cx="55" cy="530" r="0.9" opacity="0.35"/><circle cx="370" cy="0" r="1.4" opacity="0.68"/><circle cx="22" cy="116" r="0.6" opacity="0.71"/><circle cx="66" cy="100" r="0.6" opacity="0.77"/><circle cx="263" cy="516" r="1.4" opacity="0.78"/><circle cx="421" cy="340" r="1.4" opacity="0.80"/><circle cx="53" cy="239" r="1.4" opacity="0.63"/><circle cx="3" cy="244" r="0.9" opacity="0.26"/><circle cx="322" cy="305" r="0.6" opacity="0.78"/><circle cx="115" cy="105" r="1.8" opacity="0.72"/><circle cx="179" cy="163" r="1.8" opacity="0.40"/><circle cx="403" cy="362" r="0.9" opacity="0.71"/><circle cx="314" cy="240" r="0.9" opacity="0.75"/><circle cx="383" cy="41" r="1.8" opacity="0.79"/><circle cx="526" cy="222" r="0.6" opacity="0.31"/><circle cx="244" cy="317" r="0.9" opacity="0.49"/><circle cx="263" cy="249" r="0.9" opacity="0.30"/><circle cx="492" cy="334" r="0.9" opacity="0.53"/><circle cx="70" cy="347" r="0.9" opacity="0.45"/><circle cx="596" cy="469" r="1.8" opacity="0.60"/><circle cx="49" cy="404" r="1.8" opacity="0.71"/><circle cx="450" cy="369" r="0.9" opacity="0.40"/><circle cx="10" cy="83" r="0.6" opacity="0.32"/><circle cx="464" cy="81" r="0.9" opacity="0.56"/><circle cx="273" cy="128" r="0.6" opacity="0.68"/><circle cx="165" cy="310" r="0.9" opacity="0.58"/><circle cx="203" cy="345" r="1.8" opacity="0.49"/><circle cx="179" cy="415" r="1.8" opacity="0.56"/><circle cx="435" cy="268" r="0.9" opacity="0.69"/><circle cx="230" cy="276" r="1.4" opacity="0.57"/><circle cx="616" cy="245" r="0.9" opacity="0.44"/><circle cx="381" cy="126" r="0.9" opacity="0.44"/><circle cx="383" cy="131" r="0.9" opacity="0.26"/><circle cx="619" cy="516" r="1.4" opacity="0.61"/><circle cx="111" cy="129" r="0.9" opacity="0.46"/><circle cx="104" cy="381" r="1.4" opacity="0.24"/><circle cx="169" cy="452" r="1.4" opacity="0.32"/><circle cx="167" cy="520" r="0.9" opacity="0.65"/><circle cx="267" cy="379" r="0.6" opacity="0.51"/><circle cx="179" cy="86" r="1.4" opacity="0.63"/><circle cx="550" cy="461" r="1.4" opacity="0.64"/><circle cx="591" cy="329" r="0.9" opacity="0.73"/><circle cx="51" cy="126" r="1.4" opacity="0.27"/><circle cx="542" cy="422" r="1.4" opacity="0.79"/><circle cx="96" cy="236" r="1.8" opacity="0.39"/><circle cx="583" cy="351" r="1.4" opacity="0.32"/><circle cx="335" cy="408" r="0.6" opacity="0.76"/><circle cx="358" cy="74" r="0.9" opacity="0.49"/><circle cx="12" cy="462" r="1.8" opacity="0.48"/><circle cx="369" cy="28" r="1.8" opacity="0.46"/><circle cx="295" cy="112" r="0.9" opacity="0.78"/><circle cx="112" cy="42" r="1.8" opacity="0.71"/><circle cx="323" cy="413" r="0.9" opacity="0.50"/><circle cx="169" cy="65" r="0.6" opacity="0.82"/><circle cx="197" cy="266" r="1.8" opacity="0.68"/><circle cx="499" cy="286" r="1.4" opacity="0.59"/><circle cx="366" cy="276" r="1.4" opacity="0.41"/><circle cx="571" cy="480" r="0.9" opacity="0.31"/><circle cx="432" cy="399" r="0.9" opacity="0.27"/><circle cx="287" cy="371" r="0.6" opacity="0.71"/><circle cx="470" cy="523" r="1.8" opacity="0.34"/><circle cx="216" cy="153" r="1.4" opacity="0.26"/><circle cx="29" cy="504" r="0.6" opacity="0.55"/><circle cx="227" cy="114" r="0.9" opacity="0.79"/><circle cx="424" cy="174" r="0.9" opacity="0.38"/><circle cx="247" cy="492" r="1.8" opacity="0.30"/><circle cx="353" cy="139" r="1.4" opacity="0.31"/></g>
+  <g fill="none" stroke="#aaaef6" stroke-opacity=".35">
+    <ellipse cx="327" cy="274" rx="266" ry="101" transform="rotate(-25 327 274)"/>
+    <ellipse cx="327" cy="274" rx="245" ry="82" transform="rotate(-25 327 274)" stroke-dasharray="2 7"/>
+    <path d="M125 152l54-43 37 24m250-46 42 38 52-20"/>
+    <circle cx="506" cy="125" r="13"/>
+  </g>
+  <g fill="#f4d69d">
+    <path d="M179 97q1 11 12 12-11 1-12 12-1-11-12-12 11-1 12-12z"/>
+    <path d="M508 113q1 11 12 12-11 1-12 12-1-11-12-12 11-1 12-12z"/>
+    <circle cx="125" cy="152" r="3"/><circle cx="216" cy="133" r="2"/><circle cx="466" cy="87" r="2"/><circle cx="560" cy="105" r="3"/>
+  </g>
+  <path d="M0 505Q108 470 208 441Q312 401 423 423Q540 449 640 512V560H0Z" fill="url(#hill)"/>
+  <path d="M80 480Q155 457 208 441Q312 401 423 423Q527 447 582 477" fill="none" stroke="#8485b5" stroke-opacity=".55"/>
+  <circle cx="302" cy="318" r="118" fill="url(#glow)"/>
+  <!-- tall robot companion (about 3x the girl's height) -->
+  <g class="robot">
+    <path d="M430 240 L446 288 L447 334" fill="none" stroke="#5e5f92" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M430 240 L446 288 L447 334" fill="none" stroke="#e9dcc3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="446" cy="288" r="5.5" fill="url(#shell)" stroke="#f8db9d"/>
+    <ellipse cx="447" cy="339" rx="6" ry="8" fill="url(#shell)" stroke="#f8db9d"/>
+    <path d="M392 318 L386 368 L383 414" fill="none" stroke="#5e5f92" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><path d="M392 318 L386 368 L383 414" fill="none" stroke="#e9dcc3" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M408 318 L415 368 L419 414" fill="none" stroke="#5e5f92" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><path d="M408 318 L415 368 L419 414" fill="none" stroke="#e9dcc3" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="386" cy="368" r="6" fill="url(#shell)" stroke="#f8db9d"/><circle cx="415" cy="368" r="6" fill="url(#shell)" stroke="#f8db9d"/>
+    <path d="M370 418q12-9 24 0z" fill="url(#shell)" stroke="#f8db9d"/><path d="M410 418q12-9 24 0z" fill="url(#shell)" stroke="#f8db9d"/>
+    <ellipse cx="400" cy="314" rx="20" ry="10" fill="#2b2f52" stroke="#f8db9d" stroke-opacity=".6"/>
+    <path d="M366 236q34-14 68 0 4 40-20 72h-28q-24-32-20-72z" fill="url(#shell)" stroke="#f8db9d"/>
+    <path d="M384 250q16-6 32 0" fill="none" stroke="#777cb8" stroke-opacity=".6"/>
+    <circle cx="400" cy="270" r="5" fill="#ffe3a7" opacity=".85"/>
+    <rect x="396" y="214" width="8" height="18" rx="3" fill="#777cb8"/>
+    <g transform="rotate(-12 400 190)">
+      <ellipse cx="400" cy="190" rx="40" ry="29" fill="url(#shell)" stroke="#f8db9d"/>
+      <ellipse cx="400" cy="194" rx="31" ry="17" fill="#202642"/>
+      <g class="eyes" fill="#ffe3a7"><circle cx="387" cy="194" r="5.5"/><circle cx="413" cy="194" r="5.5"/></g>
+      <path d="M400 161v-9" stroke="#ffe3a7" stroke-width="2"/><circle cx="400" cy="150" r="3" fill="#ffe3a7"/>
+    </g>
+    <path d="M370 242 L340 274 L314 299" fill="none" stroke="#5e5f92" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M370 242 L340 274 L314 299" fill="none" stroke="#e9dcc3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="340" cy="274" r="5.5" fill="url(#shell)" stroke="#f8db9d"/>
+    <path d="M314 299l-10 10" stroke="#5e5f92" stroke-width="7" stroke-linecap="round"/><path d="M314 299l-10 10" stroke="#e9dcc3" stroke-width="4.5" stroke-linecap="round"/>
+    <ellipse cx="313" cy="301" rx="7" ry="5" fill="url(#shell)" stroke="#f8db9d" transform="rotate(-45 313 301)"/>
+  </g>
+  <!-- girl -->
+  <g stroke-linecap="round" stroke-linejoin="round" transform="translate(262 429) scale(1.4) translate(-262 -429)">
+    <path d="M256 406v22m11-22v22" stroke="#171b33" stroke-width="4.5"/>
+    <path d="M250 429h8m6 0h8" stroke="#171b33" stroke-width="4"/>
+    <path d="M259 370l-6 22" stroke="#e7bfaa" stroke-width="4"/>
+    <path d="M253 366q9-6 19 0l9 40q-18 6-36 0z" fill="#535481" stroke="#b9a5bd" stroke-width="1.2"/>
+    <path d="M268 370l12-14 9-13" stroke="#e7bfaa" stroke-width="4"/>
+    <path d="M250 351q-2 22 8 30l4-14z" fill="#22223c"/>
+    <circle cx="263" cy="351" r="11.5" fill="#d9a58e" stroke="#b9a5bd" stroke-width="1.2"/>
+    <path d="M251 352q-1-16 13-17 11 0 13 9-9 1-15-4-2 6-11 12z" fill="#22223c"/>
+    <path d="M247 355q-6 16 4 26" fill="none" stroke="#22223c" stroke-width="5"/>
+  </g>
+  <circle class="spark" cx="302" cy="309" r="4" fill="#fff3d0"/>
+</svg>
       </div>
-      <div class="grid2">
-        <div>
-          <h4>Methods</h4>
-          <ul>
-            <li>Interviews and think-aloud usability tests on four real tasks.</li>
-            <li>3-day diary study and a hands-on journey-mapping activity.</li>
-            <li>Affinity diagram and thematic analysis of the transcripts.</li>
+
+      <div class="wrap concept" aria-label="What each side brings">
+        <div class="concept-col">
+          <p class="concept-label">Human</p>
+          <p>Context · Empathy · Judgment · Purpose</p>
+        </div>
+        <div class="concept-col concept-together">
+          <p class="concept-label">Together</p>
+          <p>Better decisions · Better experiences</p>
+        </div>
+        <div class="concept-col">
+          <p class="concept-label">AI</p>
+          <p>Pattern · Scale · Generation · Automation</p>
+        </div>
+      </div>
+      <p class="wrap hero-note">Technology should augment human understanding, not replace it.</p>
+    </section>
+
+    <!-- 02 How I think -->
+    <section class="section thinking" id="thinking" aria-labelledby="thinking-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow"><span class="eyebrow-no">02</span> How I think</p>
+          <h2 id="thinking-title">I start with people, then choose the technology.</h2>
+        </header>
+
+        <div class="bridge" data-reveal>
+          <div class="bridge-head bridge-human"><h3>What I bring as a human</h3></div>
+          <div class="bridge-head bridge-tech"><h3>What I build with technology</h3></div>
+          <ul class="bridge-list bridge-human">
+            <li>Understanding ambiguous needs</li>
+            <li>User research</li>
+            <li>Context and interpretation</li>
+            <li>Communication</li>
+            <li>Product judgment</li>
+            <li>Documentation and reporting</li>
+          </ul>
+          <div class="bridge-lines" aria-hidden="true">
+            <svg viewBox="0 0 200 360" preserveAspectRatio="none">
+              <path pathLength="1" d="M0 30C100 30 100 30 200 30"/>
+              <path pathLength="1" d="M0 90C90 90 110 150 200 150"/>
+              <path pathLength="1" d="M0 150C90 150 110 90 200 90"/>
+              <path pathLength="1" d="M0 210C90 210 110 270 200 270"/>
+              <path pathLength="1" d="M0 270C90 270 110 210 200 210"/>
+              <path pathLength="1" d="M0 330C100 330 100 330 200 330"/>
+            </svg>
+          </div>
+          <ul class="bridge-list bridge-tech">
+            <li>AI-assisted workflows</li>
+            <li>Interactive prototypes</li>
+            <li>Web applications</li>
+            <li>Intelligent systems</li>
+            <li>Automation and integration</li>
+            <li>Testing, release and user support</li>
           </ul>
         </div>
-        <div>
-          <h4>Key findings</h4>
-          <ul>
-            <li>Repeated sign-up and password failures.</li>
-            <li>CO₂ figures were valued but not explained.</li>
-            <li>Trip recording needed clear start and stop controls.</li>
+        <p class="statement" data-reveal>Technology becomes useful when it fits the way people actually think and work.</p>
+      </div>
+    </section>
+
+    <!-- 03 Selected work -->
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow"><span class="eyebrow-no">03</span> Selected work</p>
+          <h2 id="work-title">Questions I have worked on.</h2>
+          <p class="section-intro">Each piece of work starts with a human or product question. The technology came after. I bring the same habit to three kinds of roles:</p>
+        </header>
+
+        <!-- Three directions, one thread -->
+        <ul class="lanes" aria-label="Where I can help">
+          <li class="lane">
+            <p class="lane-tag">AI Product &amp; UX</p>
+            <p class="lane-line">Designing AI that people can check and trust.</p>
+            <p class="lane-proof">Evidence: <a href="#metallum">Metallum</a> · <a href="#travelly">Travelly</a> · <a href="#drbot">DR.BOT</a></p>
+          </li>
+          <li class="lane">
+            <p class="lane-tag">Business Analysis &amp; Systems</p>
+            <p class="lane-line">Turning what stakeholders say into requirements and workflows.</p>
+            <p class="lane-proof">Evidence: <a href="#spdms">SPDMS</a> · <a href="#aimmi">AImmi payments</a> · <a href="#about">university administration</a></p>
+          </li>
+          <li class="lane">
+            <p class="lane-tag">Implementation &amp; Support</p>
+            <p class="lane-line">Helping people actually use the system, and keeping it running.</p>
+            <p class="lane-proof">Evidence: <a href="#aimmi">AImmi go-live &amp; bug fixes</a> · <a href="#spdms">SPDMS user guides</a> · <a href="#about">user support</a></p>
+          </li>
+        </ul>
+
+        <!-- Work card: AImmi -->
+        <article class="project project-work" id="aimmi" aria-labelledby="aimmi-q" data-reveal>
+          <header class="project-head">
+            <p class="project-kicker">Recent work · Junior Developer Intern</p>
+            <h3 class="project-question" id="aimmi-q">How can a platform that only sells credits start selling a real service, end to end?</h3>
+            <p class="project-name"><strong>AImmi</strong>, Visa Assistance Payments · Live platform used in several countries · Hybrid, Brisbane · Sep – Nov 2026 · <a href="https://ai-mmi.com" target="_blank" rel="noopener">ai-mmi.com<span class="sr-only"> (opens in a new tab)</span></a></p>
+          </header>
+          <div class="project-body">
+            <figure class="project-visual">
+              <div class="visual-frame flow-visual">
+                <ol class="signal">
+                  <li><span class="signal-dot"></span><b>Landing page &amp; checkout</b><small>Bilingual, English and Chinese</small></li>
+                  <li><span class="signal-dot"></span><b>Stripe payment</b><small>Stripe Checkout</small></li>
+                  <li><span class="signal-dot"></span><b>Order confirmed</b><small>Webhook updates the order status</small></li>
+                  <li><span class="signal-dot"></span><b>Client visa details</b><small>Form, order history, add-ons, custom quotes</small></li>
+                  <li><span class="signal-dot"></span><b>Admin &amp; follow-up</b><small>Order dashboard and scheduled reminder emails</small></li>
+                </ol>
+              </div>
+              <figcaption>The visa assistance order flow I planned and built, live since October 2026.</figcaption>
+            </figure>
+            <div class="project-story">
+              <p>The platform could only sell generic credit packages, so it had no way to sell visa assistance as a service.</p>
+              <dl class="facts">
+                <div><dt>Approach</dt><dd>Mapped the existing credit and Stripe payment flow, then planned a 14-step rollout: landing page, checkout, confirmation, client details, order history, admin dashboard, reminders, retiring legacy plans and end-to-end testing.</dd></div>
+                <div><dt>Built</dt><dd>Laravel controllers and a service layer, a new orders table, Stripe Checkout with webhook handling, a scheduled command for reminder emails, and bilingual views.</dd></div>
+                <div><dt>Result</dt><dd>Ran the full payment flow end to end in test mode, then launched it to production in October 2026.</dd></div>
+                <div><dt>How I work</dt><dd>Feature branches merged through pull requests, and a step-by-step technical write-up for each stage so the work could be handed over cleanly. I used Claude to read code, plan and review, and tested and verified every step myself.</dd></div>
+              </dl>
+            </div>
+          </div>
+          <div class="work-more">
+            <h4>Also at AImmi</h4>
+            <ul class="work-list">
+              <li><b>Production bug fixes.</b> Traced a wallet page 404 to a route pointing at a missing controller, removed it and deployed the fix; made the checkout summary refresh when customers change options.</li>
+              <li><b>Admin call-back requests page.</b> Staff could not see call-back requests from customers; I built the admin page, now live, so they have one place to follow up on leads.</li>
+              <li><b>Pricing and copy audit.</b> Checked English and Chinese marketing copy against the real pricing logic and fixed mismatches, so customers see accurate prices.</li>
+              <li><b>User journey audit.</b> Walked every public entry point as a guest to check new features could be found, and documented where navigation needed work.</li>
+              <li><b>AI assistant redesign</b> <span class="pill">Built, not yet released</span> Turned the fixed right-side chat panel into one people can collapse, expand and move, and separated the mixed modes into a text chat (type or dictate) and a live voice conversation with a transcript. The code is in the repository and was handed over when my internship ended.</li>
+            </ul>
+          </div>
+          <p class="tools">Tools: PHP 8 (Laravel, Blade, Artisan), MySQL 8, Stripe Checkout, webhooks &amp; Stripe CLI, JavaScript, Git/GitHub (pull requests), Cloudflare, DeepSeek &amp; Grok APIs, Claude</p>
+        </article>
+
+        <!-- Project card: SPDMS -->
+        <article class="project" id="spdms" aria-labelledby="spdms-q" data-reveal>
+          <header class="project-head">
+            <p class="project-kicker">Project 01 · Product, UX and delivery</p>
+            <h3 class="project-question" id="spdms-q">How can complex organisational workflows become interfaces people can actually understand?</h3>
+            <p class="project-name"><strong>DOST Strategic Plan Development Management System</strong> · Industry capstone, front-end lead · Team of 7 · 2026</p>
+          </header>
+          <div class="project-body">
+            <figure class="project-visual">
+              <div class="visual-frame video-frame">
+                <!-- Demo video: put the file at videos/spdms-demo.mp4 (H.264 MP4, ideally under 25 MB) -->
+                <video controls playsinline preload="none" poster="images/spdms-mapping.jpg" width="1600" height="900" aria-label="SPDMS demo video: walking through the strategic planning system">
+                  <source src="videos/spdms-demo.mp4" type="video/mp4">
+                  <img src="images/spdms-mapping.jpg" alt="Strategic mapping page linking the national agenda, development plan elements and department objectives step by step">
+                </video>
+              </div>
+              <figcaption>Demo walkthrough of the system I designed and built. Press play to watch.</figcaption>
+            </figure>
+            <div class="project-story">
+              <p>A government department drafts, reviews, approves and tracks its strategic plans across five user roles. The challenge was making that multi-role workflow clear on screen.</p>
+              <dl class="facts">
+                <div><dt>Process</dt><dd><ol class="flow"><li>Requirements</li><li>Roles &amp; permissions</li><li>Workflow</li><li>Figma</li><li>Client feedback</li><li>Front-end build</li></ol></dd></div>
+                <div><dt>My role</dt><dd>
+                  <ul class="plain">
+                    <li>Analysed multi-role requirements and workflows.</li>
+                    <li>Led the Figma design, from early wireframes to interactive screens.</li>
+                    <li>Presented designs directly to the client and iterated on their feedback.</li>
+                    <li>Built the whole front end myself and worked with back-end developers through APIs; also built the strategic mapping back end.</li>
+                  </ul></dd></div>
+                <div><dt>Key decision</dt><dd>Turn strategic mapping into a guided, three-level sequence, so staff can see how each objective connects to the national agenda.</dd></div>
+                <div><dt>Outcome</dt><dd>Signed off after 5 client review rounds. Five government user roles supported. Top code contributor in the team.</dd></div>
+              </dl>
+            </div>
+          </div>
+          <p class="tools">Tools: Figma, PHP (Laravel), JavaScript, Tailwind CSS, Vite, MySQL, REST APIs, Git/GitHub, Jira</p>
+          <details class="case-more">
+            <summary>Read the full case study</summary>
+            <div class="case-body">
+              <div class="grid2">
+                <div>
+                  <h4>What I did</h4>
+                  <ul>
+                    <li>Turned client needs into requirements, user flows and wireframes.</li>
+                    <li>Designed every screen in Figma and agreed layouts and interactions with the client.</li>
+                    <li>Coded all front-end pages: login and profile, user management, role-based access, management dashboard and report, mapping page and landing page.</li>
+                    <li>Built the strategic objective mapping back end (MySQL, REST APIs).</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>How I worked</h4>
+                  <ul>
+                    <li>Presented each working version to the client and adjusted it from their feedback.</li>
+                    <li>Reported to the project manager and resolved integration conflicts with back-end developers.</li>
+                    <li>Wrote the user guide and process flowcharts so staff could learn the system.</li>
+                    <li>Tracked work in Jira and shipped through Git/GitHub.</li>
+                  </ul>
+                </div>
+              </div>
+              <figure><img src="images/spdms-landing.jpg" alt="SPDMS landing page" loading="lazy"><figcaption>Landing page I designed and built.</figcaption></figure>
+              <div class="gallery">
+                <figure><img src="images/spdms-dashboard.jpg" alt="Management dashboard with plan progress charts" loading="lazy"><figcaption>Management dashboard: plan progress, filters and export.</figcaption></figure>
+                <figure><img src="images/spdms-tech-dashboard.jpg" alt="Technical Administration dashboard with account security and system health" loading="lazy"><figcaption>Technical Admin dashboard: account security, audit events and backups at a glance.</figcaption></figure>
+              </div>
+            </div>
+          </details>
+        </article>
+
+        <!-- Project card: Metallum -->
+        <article class="project project-flip" id="metallum" aria-labelledby="metallum-q" data-reveal>
+          <header class="project-head">
+            <p class="project-kicker">Project 02 · Human-centred AI</p>
+            <h3 class="project-question" id="metallum-q">How can AI support researchers without taking away human verification?</h3>
+            <p class="project-name"><strong>Metallum</strong>, a research assistant prototype for metallurgy · Individual project · QUT, 2026</p>
+          </header>
+          <div class="project-body">
+            <figure class="project-visual">
+              <div class="visual-frame">
+                <img src="images/metallum-overview.jpg" alt="Metallum interface: researchers choose comparison fields, trace each value to its source figure, and record their own decision" loading="lazy" width="1600" height="900">
+                <ol class="visual-layer" aria-hidden="true"><li>Understand the research workflow</li><li>Test with 7 researchers</li><li>Redesign after each round</li><li>Prototype + cloud service</li></ol>
+              </div>
+              <figcaption>Every value stays next to its method, conditions and original figure.</figcaption>
+            </figure>
+            <div class="project-story">
+              <p>Researchers work across fragmented papers and results. Numbers such as “11.72 %/min”, “100%” and “33%” look comparable but measure different things, and chatbots tend to answer without showing sources.</p>
+              <div class="roles">
+                <div class="role-box"><h4>AI's role</h4><p>Retrieve, organise and connect results across papers.</p></div>
+                <div class="role-box role-human"><h4>Researcher's role</h4><p>Verify the evidence, interpret results and make the research decision.</p></div>
+              </div>
+              <dl class="facts">
+                <div><dt>My role</dt><dd>Research, interaction design, prototype and supporting cloud service.</dd></div>
+                <div><dt>Process</dt><dd><ol class="flow"><li>Frame the research problem</li><li>3 test rounds, 7 researchers</li><li>3 redesigns</li><li>Prototype</li></ol></dd></div>
+                <div><dt>Key decision</dt><dd>Not a chatbot. Testers said long AI answers hid the evidence, so every value links back to its source and the researcher records the final decision.</dd></div>
+                <div><dt>Outcome</dt><dd>A clickable prototype refined through three rounds of testing, and an AWS service with workers that scale from 0 to 5.</dd></div>
+              </dl>
+              <p class="status"><span>Prototype status</span> The AI extraction step currently uses prepared data. A live model call is the next step.</p>
+            </div>
+          </div>
+          <p class="tools">Tools: HTML, CSS, JavaScript, Python, FastAPI, Docker, AWS (ECS Fargate, SQS, DynamoDB, ElastiCache, S3)</p>
+          <details class="case-more">
+            <summary>Read the full case study</summary>
+            <div class="case-body">
+              <h4>What testing changed</h4>
+              <ul>
+                <li><b>Round 1 (experts):</b> they got lost in a dense screen, so I added a step-by-step guide (the “Ore” mascot) and linked every value to its original chart.</li>
+                <li><b>Round 2 (newcomers):</b> search felt dull and slow, so I added a map that grows from the search to related papers and removed extra confirmation steps.</li>
+                <li><b>Round 3 (experts):</b> they asked about accuracy and bulk downloading, so I researched the ethics and access rules and designed papers to be read one at a time.</li>
+                <li>I chose not to build a chatbot, because testers said long AI answers felt like one and hid the evidence.</li>
+              </ul>
+              <div class="gallery">
+                <figure><img src="images/metallum-problem.jpg" alt="Three numbers that answer different questions" loading="lazy"><figcaption>Why numbers can't simply be ranked.</figcaption></figure>
+                <figure><img src="images/metallum-reflection.jpg" alt="Critical reflection on responsibility for research claims" loading="lazy"><figcaption>Responsible AI: what the interface supports and what is still unresolved.</figcaption></figure>
+              </div>
+              <h4>Build</h4>
+              <p>Clickable prototype in HTML/JavaScript. The supporting cloud service runs in Python (FastAPI) and Docker on AWS: an API takes a question, a queue hands it to background workers that scale from 0 to 5 with demand, and repeated questions are answered from a cache. The extraction step is still a placeholder; a real AI model call is the next step.</p>
+              <figure><img src="images/metallum-cloud.jpg" alt="Cloud architecture: load balancer, API service, message queue, auto-scaling workers, database and cache" loading="lazy"><figcaption>Cloud architecture (solid = built, grey dashed = planned).</figcaption></figure>
+            </div>
+          </details>
+        </article>
+
+        <!-- Project card: DR.BOT -->
+        <article class="project" id="drbot" aria-labelledby="drbot-q" data-reveal>
+          <header class="project-head">
+            <p class="project-kicker">Project 03 · Multimodal interaction</p>
+            <h3 class="project-question" id="drbot-q">How can machines communicate with people when normal interaction becomes difficult?</h3>
+            <p class="project-name"><strong>DR.BOT</strong>, a multimodal disaster-response robot prototype · Team · QUT Brains &amp; Bots Hackathon, 2026</p>
+          </header>
+          <div class="project-body">
+            <figure class="project-visual">
+              <div class="visual-frame flow-visual">
+                <ol class="signal">
+                  <li><span class="signal-dot"></span><b>Person detection</b><small>Camera finds a person</small></li>
+                  <li><span class="signal-dot"></span><b>Gesture / voice</b><small>Speak, or signal by hand</small></li>
+                  <li><span class="signal-dot"></span><b>AI interpretation</b><small>English or Chinese</small></li>
+                  <li><span class="signal-dot"></span><b>System feedback</b><small>Spoken reply</small></li>
+                  <li><span class="signal-dot"></span><b>Monitoring</b><small>Live dashboard, works offline</small></li>
+                </ol>
+              </div>
+              <figcaption>The interaction loop the prototype runs end to end.</figcaption>
+            </figure>
+            <div class="project-story">
+              <p>In a disaster, a person may be injured, unable to speak, or speak a different language. The prototype tries several ways to reach them and reports what it learns to responders.</p>
+              <div class="roles">
+                <div class="role-box"><h4>Built in the prototype</h4><p>Person detection, gesture recognition, voice recognition, spoken feedback, bilingual English/Chinese interaction, running on a Raspberry Pi, with a back-end monitoring dashboard.</p></div>
+                <div class="role-box role-concept"><h4>Broader concept (not built)</h4><p>A rescue robot that could search real disaster sites and coordinate with response teams.</p></div>
+              </div>
+              <dl class="facts">
+                <div><dt>My role</dt><dd>Deployed and integrated the models behind the bilingual voice and gesture triage flow.</dd></div>
+                <div><dt>Process</dt><dd><ol class="flow"><li>Scenario</li><li>Interaction loop</li><li>Model integration</li><li>Test on device</li></ol></dd></div>
+                <div><dt>Key decision</dt><dd>Work fully offline, with gestures as a fallback, because a disaster site may have no network and the person may not be able to talk.</dd></div>
+                <div><dt>Outcome</dt><dd>A working hackathon prototype that detects a person, asks triage questions, understands the answer and reports it to the dashboard.</dd></div>
+              </dl>
+            </div>
+          </div>
+          <p class="tools">Tools: Python, OpenCV, YOLO, MediaPipe, Vosk, Whisper, Flask, SQLite, Raspberry Pi</p>
+        </article>
+
+        <!-- Project card: Travelly -->
+        <article class="project project-flip" id="travelly" aria-labelledby="travelly-q" data-reveal>
+          <header class="project-head">
+            <p class="project-kicker">Project 04 · Human-centred design research</p>
+            <h3 class="project-question" id="travelly-q">Start with people, not technology.</h3>
+            <p class="project-name"><strong>Travelly</strong>, a QUT research app that encourages walking and cycling · Pair project · QUT IFN637, 2025</p>
+          </header>
+          <div class="project-body">
+            <figure class="project-visual">
+              <div class="visual-frame">
+                <img src="images/travelly-journey.jpg" alt="Commuter journey map showing pain points and design opportunities" loading="lazy" width="1600" height="900">
+                <ol class="visual-layer" aria-hidden="true"><li>Interviews</li><li>Diary study</li><li>Usability testing</li><li>Insight synthesis</li><li>Persona / journey</li><li>UX requirements</li><li>Prototype</li></ol>
+              </div>
+              <figcaption>Journey map: where people struggled, and the opportunities that followed.</figcaption>
+            </figure>
+            <div class="project-story">
+              <p>People wanted to travel actively, yet struggled with the app meant to help them. Before designing anything, we set out to understand why. Research was run under university ethics approval.</p>
+              <dl class="facts">
+                <div><dt>Process</dt><dd><ol class="flow"><li>Interviews</li><li>3-day diary study</li><li>Think-aloud usability tests</li><li>Affinity &amp; themes</li><li>Persona / journey</li><li>Design brief</li><li>Figma prototype</li></ol></dd></div>
+                <div><dt>My role</dt><dd>Co-ran the research and analysis with my project partner; ran 3 of the 6 prototype test sessions.</dd></div>
+                <div><dt>Key decision</dt><dd>Let the seven themes set the redesign priorities: reliable sign-up, CO₂ figures people can understand, and clear start and stop controls for trip recording.</dd></div>
+                <div><dt>Outcome</dt><dd>A persona, journey map and design brief, then an interactive Figma prototype tested with users before any development. <a href="https://www.figma.com/design/yH5XQysWPgI7hh3At4zzbF/637-Travelly?node-id=0-1" target="_blank" rel="noopener">View the prototype<span class="sr-only"> (opens in a new tab)</span></a></dd></div>
+              </dl>
+            </div>
+          </div>
+          <p class="tools">Tools &amp; methods: Figma, interviews, think-aloud testing, diary study, journey mapping, affinity diagram, thematic analysis</p>
+          <details class="case-more">
+            <summary>Read the full case study</summary>
+            <div class="case-body">
+              <div class="grid2">
+                <div><h4>Research</h4><ul><li>4 participants, under university ethics approval.</li><li>Interviews and think-aloud usability tests on four real tasks.</li><li>3-day diary study and a hands-on journey-mapping activity.</li><li>Affinity diagram and thematic analysis of the transcripts.</li></ul></div>
+                <div><h4>Key findings</h4><ul><li>Repeated sign-up and password failures.</li><li>CO₂ figures were valued but not explained.</li><li>Trip recording needed clear start and stop controls.</li></ul></div>
+              </div>
+              <div class="gallery">
+                <figure><img src="images/travelly-themes.jpg" alt="Theme diagram of 7 user experience themes" loading="lazy"><figcaption>Seven themes from the analysis.</figcaption></figure>
+                <figure><img src="images/travelly-persona.jpg" alt="Persona of an international student commuter" loading="lazy"><figcaption>Persona built from the research.</figcaption></figure>
+              </div>
+            </div>
+          </details>
+        </article>
+
+        <!-- Other work (kept from the previous site) -->
+        <div class="also" data-reveal>
+          <h3 class="also-title">Also built</h3>
+          <ul class="also-list">
+            <li>
+              <p class="also-meta">Team web app · QUT IFN636</p>
+              <h4>Leave &amp; Shift Manager</h4>
+              <p>Employees apply for leave, see shifts and request swaps; admins approve and assign. I built shift assignment, swap and conflict-check features.</p>
+              <p class="tools">React, Node.js, Express, MongoDB, JWT, AWS EC2, GitHub Actions</p>
+            </li>
+            <li>
+              <p class="also-meta">Team web app · QUT</p>
+              <h4>ThaimeUp, food ordering site</h4>
+              <p>Menu, basket, checkout and an admin area. I built the login and registration front end, logout and the custom error pages.</p>
+              <p class="tools">Python, Flask, MySQL, HTML, CSS</p>
+            </li>
+            <li>
+              <p class="also-meta">Machine learning · QUT</p>
+              <h4>Used-car risk prediction &amp; text classification</h4>
+              <p>Compared decision tree, logistic regression and neural network models on 41,000+ car sales records (best ROC AUC 0.77). A BERTweet text classifier reached 94.0% test accuracy and 0.946 F1.</p>
+              <p class="tools">Python, pandas, scikit-learn, PyTorch, Hugging Face, Jupyter</p>
+            </li>
           </ul>
         </div>
       </div>
-      <div class="gallery">
-        <figure><img src="images/travelly-affinity.jpg" alt="Affinity diagram of research notes" loading="lazy"><figcaption>Affinity diagram grouping participant notes.</figcaption></figure>
-        <figure><img src="images/travelly-themes.jpg" alt="Theme diagram of 7 user experience themes" loading="lazy"><figcaption>Seven themes from the analysis.</figcaption></figure>
-        <figure><img src="images/travelly-persona.jpg" alt="Persona of an international student commuter" loading="lazy"><figcaption>Persona built from the research.</figcaption></figure>
-        <figure><img src="images/travelly-journey.jpg" alt="Journey map with pain points and opportunities" loading="lazy"><figcaption>Journey map: pain points and design opportunities.</figcaption></figure>
-      </div>
-      <h4>Outcome</h4>
-      <p>A persona, journey map and design brief, then an interactive Figma prototype of the key flows, tested with users before any development. <a href="https://www.figma.com/design/yH5XQysWPgI7hh3At4zzbF/637-Travelly?node-id=0-1" target="_blank" rel="noopener">View the Figma prototype</a> (start from Flow 1).</p>
-      <div class="tools">Tools &amp; methods: Figma, interviews, think-aloud testing, diary study, journey mapping, affinity diagram, thematic analysis</div>
-    </article>
+    </section>
 
-    <h2 style="margin-top:44px">More projects</h2>
-    <p class="sub">Work experience, team builds, a hackathon and machine learning.</p>
-    <div class="minis">
-      <div class="mini">
-        <div class="eyebrow">Work · Junior Developer Intern</div>
-        <h3>AImmi – AI assistant redesign</h3>
-        <p style="margin:0 0 8px;font-size:14px"><a href="https://ai-mmi.com" target="_blank" rel="noopener">ai-mmi.com</a> (live product)</p>
-        <p>Split a confusing mix of voice, transcription and text modes into two clear flows: real-time voice Q&amp;A and a text chat by typing or dictation. Wrote the voice API code and designed the flows; also translated and updated product copy and worked with the founder on requirements and releases.</p>
-        <div class="tools">Tools: PHP (Laravel), JavaScript, DeepSeek &amp; Grok APIs, Cloudflare</div>
+    <!-- 04 From question to outcome -->
+    <section class="section approach" id="approach" aria-labelledby="approach-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow"><span class="eyebrow-no">04</span> From question to outcome</p>
+          <h2 id="approach-title">How a question becomes something people can use.</h2>
+        </header>
+        <ol class="steps" data-reveal>
+          <li class="step"><span class="step-no">1</span><h3>Understand</h3><p>People, context and workflows.</p></li>
+          <li class="step"><span class="step-no">2</span><h3>Frame</h3><p>Translate ambiguity into requirements and opportunities.</p></li>
+          <li class="step"><span class="step-no">3</span><h3>Explore</h3><p>Research, prototype and compare solutions.</p></li>
+          <li class="step"><span class="step-no">4</span><h3>Build</h3><p>Connect design, AI and software.</p></li>
+          <li class="step"><span class="step-no">5</span><h3>Validate</h3><p>Use feedback, evidence and human judgment.</p></li>
+          <li class="step"><span class="step-no">6</span><h3>Deliver &amp; support</h3><p>Release, guide users and keep improving.</p></li>
+        </ol>
       </div>
-      <div class="mini">
-        <div class="eyebrow">Hackathon · Team</div>
-        <h3>DR.BOT – disaster triage companion</h3>
-        <p>QUT Brains &amp; Bots Hackathon. A device that finds a person, asks triage questions by voice in English or Chinese, falls back to hand gestures if they can't speak, and reports to a live dashboard, even offline. I built the bilingual offline voice and gesture triage flow.</p>
-        <div class="tools">Tools: Python, Flask, OpenCV, YOLO, MediaPipe, Vosk, Whisper</div>
-      </div>
-      <div class="mini">
-        <div class="eyebrow">Team web app · QUT IFN636</div>
-        <h3>Leave &amp; Shift Manager</h3>
-        <p>A web app where employees apply for leave, see their shifts and request swaps, and admins approve requests and assign shifts. I built shift assignment, swap and conflict-check features.</p>
-        <div class="tools">Tools: React, Node.js, Express, MongoDB, JWT, AWS EC2, GitHub Actions</div>
-      </div>
-      <div class="mini">
-        <div class="eyebrow">Team web app · QUT</div>
-        <h3>ThaimeUp – food ordering site</h3>
-        <p>A Thai food ordering site with menu, basket, checkout and an admin area for menu items and orders. I built the login and registration front end, logout and the custom error pages.</p>
-        <div class="tools">Tools: Python, Flask, MySQL, HTML, CSS</div>
-      </div>
-      <div class="mini">
-        <div class="eyebrow">Machine learning · QUT</div>
-        <h3>Used car risk prediction &amp; text classification</h3>
-        <p>Cleaned 41,000+ car sales records and compared decision tree, logistic regression and neural network models to flag bad purchases (best ROC AUC 0.77). In a second project my BERTweet text classifier reached 94.0% test accuracy and 0.946 F1.</p>
-        <div class="tools">Tools: Python, pandas, scikit-learn, PyTorch, Hugging Face, Jupyter</div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="about">
-  <div class="wrap about">
-    <div>
-      <h2>About me</h2>
-      <p>I'm a QUT Master of IT (Computer Science) graduate based in Brisbane. At AImmi I redesigned how users talk to the platform's AI assistant, splitting a confusing mix of voice, transcription and text modes into two clear flows: a real-time voice conversation and a text chat. I work directly with the founder to turn requests into requirements, test changes and release them.</p>
-      <p>I like the space between users, business and developers: finding out what people actually need, explaining trade-offs in plain language, and building something they can use.</p>
-    </div>
-    <div class="card">
-      <p><b>Now:</b> Junior Developer Intern, AImmi</p>
-      <p><b>Study:</b> QUT Master of IT (CS), Nov 2026</p>
-      <p><b>Location:</b> Brisbane, QLD</p>
-      <p><b>Work rights:</b> Australian Permanent Resident</p>
-    </div>
-  </div>
-</section>
+    <!-- 05 Human trace -->
+    <section class="section trace" id="trace" aria-labelledby="trace-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow"><span class="eyebrow-no">05</span> Human trace</p>
+          <h2 id="trace-title">What changed my mind.</h2>
+          <p class="section-intro">The finished screens hide the most important part: what people told me, and what I changed because of it.</p>
+        </header>
 
-<footer id="contact">
-  <div class="wrap">
-    <h2 style="color:var(--ink)">Contact</h2>
-    <p>Email: <a href="mailto:aixiaogou1314@gmail.com">aixiaogou1314@gmail.com</a> · Phone: 0412 873 654<br>
-    <a href="https://www.linkedin.com/in/yue-sun-b20420376" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/n12326836" target="_blank" rel="noopener">GitHub</a></p>
-    <p>© 2026 Joy Sun</p>
-  </div>
-</footer>
+        <div class="desk">
+          <article class="note" data-reveal>
+            <p class="note-tag">Idea I dropped · Metallum</p>
+            <p class="note-hand"><s>A chatbot answer box</s></p>
+            <p><b>User feedback:</b> long AI answers felt like a chatbot and hid the evidence.</p>
+            <p class="note-change"><b>Design change:</b> keep every value beside its method, conditions and source figure.</p>
+          </article>
+
+          <figure class="photo photo-a" data-reveal>
+            <img src="images/travelly-affinity.jpg" alt="Affinity diagram: participant notes from Travelly interviews grouped into clusters" loading="lazy">
+            <figcaption class="note-hand">Raw notes, grouped by hand (Travelly)</figcaption>
+          </figure>
+
+          <article class="note" data-reveal>
+            <p class="note-tag">Round 1 · Metallum experts</p>
+            <p class="note-hand">“I'm lost on this screen.”</p>
+            <p><b>What I saw:</b> experts got lost in a dense, all-in-one screen.</p>
+            <p class="note-change"><b>Design change:</b> a step-by-step guide, and every value linked to its original chart.</p>
+          </article>
+
+          <article class="note" data-reveal>
+            <p class="note-tag">Round 2 · Metallum newcomers</p>
+            <p class="note-hand">“Search feels slow and dull.”</p>
+            <p class="note-change"><b>Design change:</b> a map that grows from the search to related papers, and fewer confirmation steps.</p>
+          </article>
+
+          <figure class="photo photo-b" data-reveal>
+            <img src="images/metallum-process.jpg" alt="Metallum design process from understanding to the next test, with a list of what is prepared and what is working" loading="lazy">
+            <figcaption class="note-hand">Being honest about what is prepared and what works</figcaption>
+          </figure>
+
+          <article class="note" data-reveal>
+            <p class="note-tag">Round 3 · Metallum experts</p>
+            <p class="note-hand">“Is it accurate? Can I download everything?”</p>
+            <p class="note-change"><b>Design change:</b> I researched the ethics and access rules, and designed papers to be read one at a time.</p>
+          </article>
+          <!-- To add later: photos of early sketches / raw wireframes (e.g. SPDMS wireframes before Figma). -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 About -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow"><span class="eyebrow-no">06</span> About</p>
+          <h2 id="about-title">From reading people to building systems.</h2>
+        </header>
+
+        <ol class="path" data-reveal>
+          <li><span class="path-dot"></span><p class="path-when">2020–2023</p><h3>Literature</h3><p>Master of Literature, Liaoning University. Language, context, ambiguity and how people mean things.</p></li>
+          <li><span class="path-dot"></span><p class="path-when">2021–2025</p><h3>Administration</h3><p>Led a team of seven in a graduate school office, kept records in a national system and helped people who were stuck. Later, administrative officer at a public hospital.</p></li>
+          <li><span class="path-dot"></span><p class="path-when">QUT · 2026</p><h3>Information technology</h3><p>Master of IT (Computer Science): <a href="#spdms">SPDMS</a>, web apps, machine learning.</p></li>
+          <li><span class="path-dot"></span><p class="path-when">Research</p><h3>Human-centred design</h3><p>Interviews, diary studies and testing with real users: <a href="#travelly">Travelly</a>, <a href="#metallum">Metallum</a>.</p></li>
+          <li><span class="path-dot"></span><p class="path-when">2026</p><h3>AI &amp; digital systems</h3><p>Shipped payments and fixes on a live AI platform: <a href="#aimmi">AImmi</a>.</p></li>
+        </ol>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>My humanities background trained me to analyse language, context, ambiguity and human behaviour.</p>
+            <p>Working in university administration, I saw the gap between a system and the people who have to use it: people who could not log in, or did not know the next step.</p>
+            <p>I studied IT to close that gap, and to turn those insights into working digital systems.</p>
+            <p>Today I am most interested in the space where <strong>users, business, product and AI technology</strong> meet.</p>
+          </div>
+          <aside class="facts-card" aria-label="Quick facts">
+            <p><b>Recent</b> Junior Developer Intern, AImmi (Sep – Nov 2026)</p>
+            <p><b>Study</b> QUT Master of IT (CS), Nov 2026</p>
+            <p><b>Before IT</b> Master of Literature, Liaoning University</p>
+            <p><b>Location</b> Brisbane, QLD</p>
+            <p><b>Work rights</b> Australian Permanent Resident</p>
+            <a class="button button-primary" href="Joy_Sun_Resume.pdf" download>Download resume (PDF)</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 07 Contact -->
+  <footer class="section contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <p class="eyebrow"><span class="eyebrow-no">07</span> Contact</p>
+      <h2 id="contact-title">Let’s build technology that people can actually use.</h2>
+      <p class="section-intro">Open to graduate and junior roles in AI solutions, product, UX, digital systems and implementation.</p>
+      <ul class="contact-links">
+        <li><a href="mailto:aixiaogou1314@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/yue-sun-b20420376" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a></li>
+        <li><a href="https://github.com/n12326836" target="_blank" rel="noopener">GitHub<span class="sr-only"> (opens in a new tab)</span></a></li>
+        <li><a href="Joy_Sun_Resume.pdf" download>Resume (PDF)</a></li>
+      </ul>
+      <p class="contact-small">aixiaogou1314@gmail.com · 0412 873 654</p>
+      <p class="contact-small">© 2026 Joy Sun</p>
+    </div>
+  </footer>
 </body>
 </html>
